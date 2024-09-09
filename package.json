@@ -4,12 +4,17 @@
   "description": "this is the first time i try jenkins",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "author": "taipham",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
     "simple-api": "file:"
+  },
+  "devDependencies": {
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
   }
 }
