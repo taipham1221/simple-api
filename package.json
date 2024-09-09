@@ -4,7 +4,8 @@
   "description": "this is the first time i try jenkins",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server/index.js",
+    "test": "jest",
     "build": "webpack"
   },
   "author": "taipham",
@@ -14,7 +15,12 @@
     "simple-api": "file:"
   },
   "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
     "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4"
+  },
+  "jest": {
+    "globalTeardown": "./jest.teardown.js"
   }
 }
