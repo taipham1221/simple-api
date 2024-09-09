@@ -34,5 +34,11 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            echo 'Publishing test results...'
+            junit '**/reports/jest-junit.xml'
+        }
+    }
     
 }
